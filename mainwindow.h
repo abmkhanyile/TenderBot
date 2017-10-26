@@ -2,6 +2,10 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QStandardItemModel>
+#include <QFile>
+#include <QModelIndex>
+#include <QTextStream>
 
 namespace Ui {
 class MainWindow;
@@ -17,6 +21,7 @@ public:
 
 private:
     Ui::MainWindow *ui;
+    QStandardItemModel *model;
 };
 
 #endif // MAINWINDOW_H

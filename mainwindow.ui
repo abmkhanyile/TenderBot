@@ -16,7 +16,7 @@
   <widget class="QWidget" name="centralWidget">
    <layout class="QVBoxLayout" name="verticalLayout_3">
     <item>
-     <widget class="QTabWidget" name="minaTabWidget">
+     <widget class="QTabWidget" name="minTabWidget">
       <property name="currentIndex">
        <number>0</number>
       </property>
@@ -26,12 +26,12 @@
        </attribute>
        <layout class="QVBoxLayout" name="verticalLayout">
         <item>
-         <widget class="QTabWidget" name="tabWidget">
+         <widget class="QTabWidget" name="innertabWidget">
           <property name="tabPosition">
            <enum>QTabWidget::South</enum>
           </property>
           <property name="currentIndex">
-           <number>1</number>
+           <number>0</number>
           </property>
           <widget class="QWidget" name="tab_3">
            <attribute name="title">
@@ -39,7 +39,11 @@
            </attribute>
            <layout class="QVBoxLayout" name="verticalLayout_2">
             <item>
-             <widget class="QTableView" name="tableView"/>
+             <widget class="QTableView" name="tableView">
+              <property name="sizeAdjustPolicy">
+               <enum>QAbstractScrollArea::AdjustToContents</enum>
+              </property>
+             </widget>
             </item>
            </layout>
           </widget>
