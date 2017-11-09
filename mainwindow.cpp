@@ -25,11 +25,16 @@ MainWindow::MainWindow(QWidget *parent) :
             count++;
         }
     }
+    model->setHeaderData(0, Qt::Horizontal, "Websites");
+    model->setHeaderData(1, Qt::Horizontal, "Downloaded");
+    model->setHeaderData(2, Qt::Horizontal, "Date");
+    model->setHeaderData(3, Qt::Horizontal, "Buttons");
+    ui->tableView->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
     ui->tableView->setModel(model);
-
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
 }
+

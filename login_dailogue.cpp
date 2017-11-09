@@ -6,6 +6,7 @@ Login_dailogue::Login_dailogue(QWidget *parent) :
     ui(new Ui::Login_dailogue)
 {
     ui->setupUi(this);
+    setFixedSize(this->width(), this->height());
 }
 
 Login_dailogue::~Login_dailogue()
